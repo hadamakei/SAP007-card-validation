@@ -3,9 +3,20 @@ console.log(numCard); */
 
 
 
-const validator = (numCCard)=>{
+const validator = (numeCard) => {
   console.log('validador');
-  console.log(numCCard);
+  console.log(numeCard);
+  if (numeCard.length != 16){                                       //confere tamanho num
+    return false;
+}
+  
+  let tranforme = numeCard.split('');                                   // transforma valor input em array
+  console.log(tranforme);
+  tranforme.reverse();
+  console.log(tranforme);                                               // inverte ordem do array
+
+  return true;
+
 };
 
 export default validator;
