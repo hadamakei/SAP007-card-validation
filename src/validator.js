@@ -1,8 +1,3 @@
-/*import numCard from './index.js';
-console.log(numCard); */
-
-
-
 const validator = (numeCard) => {
   console.log('validador');
   console.log(numeCard);
@@ -15,7 +10,23 @@ const validator = (numeCard) => {
   tranforme.reverse();
   console.log(tranforme);                                               // inverte ordem do array
 
-  return true;
+  let pares = [];
+  let impares = []
+
+  for(let i = 0; i < 16; i ++){                         //inicia contador do array
+    console.log(i);
+    if (tranforme[i] % 2 == 0) {                        //verifica par 
+      console.log(tranforme[i]);
+      let dobro = tranforme[i] * 2;                     //dobra valor do par
+      console.log(dobro);
+      
+      
+    }
+
+  }
+
+
+  return false;
 
 };
 

@@ -1,6 +1,5 @@
 import validator from './validator.js';
 
-console.log(validator);
 
 function numCard(){
     let numCard = document.getElementById('cardNumber').value;
@@ -10,7 +9,7 @@ function numCard(){
        return alert(`Insira um número valido`)
    }
    else{
-        alert("numero valido");
+        alert("numero inserido");
    }
    return numCard;
 
@@ -18,6 +17,7 @@ function numCard(){
 
 }                                                                   
 
+//1234567890123456
 /*
 let card = document.getElementById('cardNumber').value;
 document.getElementById('cardNumber').textContent = card;
