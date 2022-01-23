@@ -19,14 +19,21 @@ const validator = (numeCard) => {
       console.log(tranforme[i]);
       let dobro = tranforme[i] * 2;                     //dobra valor do par
       console.log(dobro);
-      
+      if (dobro >= 10){                                   //confere se é maior q 10
+        let duplo = String(dobro).split('');                   // separa os digitos  cast   
+        console.log(duplo);                                         
+        dobro = parseInt(duplo[0]) + parseInt(duplo[1]);          // soma os digitos e digitos vira array
+        console.log(dobro);
+      }
+      pares.push(dobro);                                //guarda o dobro em novo array
+      console.log(pares);
       
     }
 
   }
 
 
-  return false;
+  return true;
 
 };
 
