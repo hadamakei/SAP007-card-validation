@@ -1,6 +1,25 @@
 /* --tirar setas do input de numero 
  /* <-- Aparentemente, algumas margens ainda estão lá, apesar de estar ocultas 
  */
+body{
+    background-color: rgb(238, 234, 177);
+    
+}
+
+.cabecalho{
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+h2,p{
+    text-align: center;
+    margin: 45px;
+}
+
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -14,7 +33,14 @@ input::-webkit-inner-spin-button {
 #id n boa pratica
 */
  
-.formulario{
-    display: flex wrap;
-    align-content: center;
+.formulario {
+    border: 1px solid rgb(4, 71, 138);
+    box-sizing: content-box;
+    border-radius: 5px;
+    display: flex row nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+
 }

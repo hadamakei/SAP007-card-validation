@@ -36,7 +36,7 @@ const validator = (numeCard) => {                             //recebe numero
   let impares = []*/
 
   transforme = transforme.map((numero, indice) => {                       //percorre array, pega valor e o indice
-  if (indice % 2 === 0) {                                                 // verifica se indice é par
+  if (indice % 2 != 0) {                                                 // verifica se indice é par
     numero = numero * 2                                                   // dobra valor do indice par    
     console.log(numero);
     if (numero >=10){                                                   //verifica se dobro >10
