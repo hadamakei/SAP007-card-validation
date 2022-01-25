@@ -1,4 +1,5 @@
-import validator from './validator.js';
+import {validator, validatorMaskify} from './validator.js';                     //recebe do validador
+
 
 
 function numCard(){
@@ -8,7 +9,11 @@ function numCard(){
        return false;
    }
    return numCard;
-}                                                                   
+}        
+
+function maskify(numCCard){                                                         // passa o numero;chama o maskify do validador; retorna valor escondido
+    return validatorMaskify(numCCard);
+}
 
 function ola(Event){ 
     let name = document.getElementById('name').value;                                       //pega nome // document.getElementById("name").textContent;   
@@ -18,7 +23,12 @@ function ola(Event){
         Event.preventDefault();                                                             //para de recarregar page; n envia form
         return false;
     }  
-    alert(`Olá  ${name} confirme o número de seu cartão: ${numCCard}.`);                     //alert confirmar
+    let number = maskify(numCCard);                                                         //passa numero p maskify
+    /*saida = (number) =>{
+        let resposta = document.getElementById('card');
+            resposta.textContent= `O cartão inserido foi : ${number} .`
+    }*/
+    alert(`Olá  ${name} confirme o número de seu cartão: ${number}.`);                     //alert confirmar
 }
 let confirmar = document.getElementById('formCartao');                                     //botao
 confirmar.addEventListener('submit',ola);
@@ -30,3 +40,4 @@ confirmar.addEventListener('submit',ola);
 //1234567890123456  -16
 //4083952015263 -13 ok
 //6363680354415371 ok
+

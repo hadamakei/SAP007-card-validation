@@ -10,7 +10,7 @@ function soma (pares, impares){
   }
 }*/
 
-function soma (cardArray){
+function soma (cardArray){                                                                //recebe transforme, mudei nome
   let total = cardArray.reduce(function(primeiro,segundo){return primeiro + segundo;}, 0);
   console.log(total);
   if (total % 10 != 0){
@@ -73,9 +73,25 @@ const validator = (numeCard) => {                             //recebe numero
     }
   }
   return soma(pares,impares);*/
+  
 };
 
-export default validator;
+const validatorMaskify = (numCard) => {                               //recebe numero string
+  console.log(numCard);
+  let maskify = [];                                                   //cria array
+  for (let i = 0; i < numCard.length; i++){                           //percorre o numero de 1 em 1
+    console.log(numCard.length)
+    if ( i < numCard.length-4){                                       // exclui 4 ultimos
+      maskify.push("*");                                              //add icone no lugar dos numeros no array
+    }else{
+        maskify.push(numCard[i])                                      //add numeros finais no array
+      }
+  }
+  return maskify.join("");                                            //junta os num do array num string
+} 
+
+export {validator,validatorMaskify};                                  //manda pro index
+
 
 /*funcao validar numero cartao:
 

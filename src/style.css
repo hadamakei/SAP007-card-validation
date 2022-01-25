@@ -3,23 +3,46 @@
  */
 body{
     background-color: rgb(238, 234, 177);
-    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .cabecalho{
+    margin: 25px;
+    padding: 5px;
+    font-size:xx-large;
+    font-weight: 400;
     border: 1px solid blue;
     border-radius: 5px;
     box-sizing: border-box;
-
     text-align: center;
+    
 }
 
-h2,p{
+.paymentPage{
     text-align: center;
-    margin: 45px;
+    margin: 35px;
+    font-size:larger;
+    border: 1px solid blue;
+    padding: 35px;
 }
 
+.text{
+    padding: 5px;
+    display:flex nowrap;
+    align-content: space-around;
+}
 
+.formulario {
+    border: 1px solid rgb(4, 71, 138);
+    box-sizing: content-box;
+    border-radius: 5px;
+    display: flex nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -27,20 +50,14 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+footer, p {
+    display: flexbox;
+    margin-top: 10%;
+    text-align: center;
+    font-size: small;
+}
 /*
 .classe
 
 #id n boa pratica
 */
- 
-.formulario {
-    border: 1px solid rgb(4, 71, 138);
-    box-sizing: content-box;
-    border-radius: 5px;
-    display: flex row nowrap;
-    align-content: space-around;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 10px;
-
-}

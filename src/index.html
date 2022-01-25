@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Cartão de crédito válido</title>
-    <!--<link rel="stylesheet" href="reset.css">-->
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,9 +14,9 @@
    </header>
    <section>
      <main>
-      <div id="paymentPage">
-        <h2>Finalizar Pagamento</h2>
-        <p>Olá Cliente para concluir sua compra prossiga os procedimentos de pagamento:</p>
+      <div id="paymentPage" class="paymentPage">
+        <div class="text"><h2>Finalizar Pagamento</h2>
+        Olá Cliente para concluir sua compra prossiga os procedimentos de pagamento:</div>
         <form id="formCartao" class="formulario">
           <div>
             <div>Inserir dados do cartão: </div>
@@ -30,7 +30,7 @@
           <button type="submit" id="submit">Enviar</button>
         </form> 
         <div>
-          <p id="card"></p>  <!--//aparecer cartao cripto p/ finalizar-->
+          <p id="card" ></p>  <!--//aparecer cartao cripto p/ finalizar-->
         </div>
         <!--div span-->
         
@@ -41,5 +41,8 @@
     <script src="index.js" type="module"></script>
   </body>
 
-  <footer></footer>
+  <footer>
+    <div>Desenvolvido By Keila Hadama <br> Laboratória <br> 2022</div>
+    
+  </footer>
 </html>
