@@ -27,7 +27,7 @@ const validator = (numeCard) => {                             //recebe numero
     return false;
   }
   
-  let transforme = numeCard.split('');                                   // transforma valor input em array
+  let transforme = numeCard.split('');                                  // transforma valor input em array
   console.log(transforme);
   transforme.reverse();
   console.log(transforme);                                               // inverte ordem do array
@@ -51,7 +51,7 @@ const validator = (numeCard) => {                             //recebe numero
   return soma(transforme);                                      //passa os num do array do transforme p/ a soma
 
   /* versao 1
-  for(let i = 0; i < 16; i ++){                         //inicia contador do array
+  for(let i = 0; i < 16; i++){                         //inicia contador do array
     transforme[i] = parseInt(transforme[i]);                //transforma em inteiro
     console.log(i);
     if (i % 2 != 0) {                        //verifica posicao par 

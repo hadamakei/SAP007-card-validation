@@ -1,7 +1,5 @@
 import {validator, validatorMaskify} from './validator.js';                     //recebe do validador
 
-
-
 function numCard(){
     let numCard = document.getElementById('cardNumber').value;                           //recebe input do num cartao html
    console.log(numCard.length);
@@ -15,6 +13,19 @@ function maskify(numCCard){                                                     
     return validatorMaskify(numCCard);
 }
 
+function show(){
+    let btFinal= document.getElementById("resposta");
+    if (btFinal.style.display === "none"){
+        btFinal.style.display = "block";
+        document.getElementById('cardNumber').value = '';
+        //esconder.style.display = "none";
+        //let numCCard = numCCard.this.value= " ";
+       // document.getElementsById("cardNumber").value = ''; 
+    }else{
+        btFinal.style.display = "none";
+    }
+}
+
 function ola(Event){ 
     let name = document.getElementById('name').value;                                       //pega nome // document.getElementById("name").textContent;   
     let numCCard = numCard();                                                               //pegar resultado do numero
@@ -22,16 +33,22 @@ function ola(Event){
         alert(`Insira um número válido.`);   
         Event.preventDefault();                                                             //para de recarregar page; n envia form
         return false;
-    }  
-    let number = maskify(numCCard);                                                         //passa numero p maskify
-    /*saida = (number) =>{
+    } else{
+        let number = maskify(numCCard);
         let resposta = document.getElementById('card');
-            resposta.textContent= `O cartão inserido foi : ${number} .`
-    }*/
-    alert(`Olá  ${name} confirme o número de seu cartão: ${number}.`);                     //alert confirmar
+        resposta.textContent= `Olá ${name} , o número de cartão inserido foi : ${number} .`;
+        show();
+        Event.preventDefault();
+        return false;
+    }
+    //alert(`Olá  ${name} confirme o número de seu cartão: ${number}.`);                     //alert confirmar
 }
-let confirmar = document.getElementById('formCartao');                                     //botao
-confirmar.addEventListener('submit',ola);
+let enviar = document.getElementById('submit');                                     //botao
+enviar.addEventListener('click',ola);
+
+    
+    
+
 
 // document.getElementById("card").innerHTML = numCard;    manda para o p vazio o numCard cripto
 
