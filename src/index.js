@@ -29,16 +29,21 @@ function show(){
 function ola(Event){ 
     let name = document.getElementById('name').value;                                       //pega nome // document.getElementById("name").textContent;   
     let numCCard = numCard();                                                               //pegar resultado do numero
+    Event.preventDefault();                                                             //para de recarregar page; n envia form
+    if (document.getElementById("name").value == ""){                                      //n deixa campo nome vazio
+        console.log(name);
+        document.getElementById('name').focus();
+        return alert('Preencha o campo Nome corretamente.');
+    }
     if (numCCard == false){                                                                 // caso numero invalido
-        alert(`Insira um número válido.`);   
-        Event.preventDefault();                                                             //para de recarregar page; n envia form
-        return false;
-    } else{
+        document.getElementById('cardNumber').focus();
+        return alert(`Insira um número válido.`);  
+    } 
+     else{
         let number = maskify(numCCard);
         let resposta = document.getElementById('card');
         resposta.textContent= `Olá ${name} , o número de cartão inserido foi : ${number} .`;
         show();
-        Event.preventDefault();
         return false;
     }
     //alert(`Olá  ${name} confirme o número de seu cartão: ${number}.`);                     //alert confirmar

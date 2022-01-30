@@ -1,27 +1,45 @@
 
 body{
-    background-color: rgb(238, 234, 177);
+    /*background: rgb(236,238,174);
+    background: linear-gradient(75deg, rgba(236,238,174,1) 0%, rgba(148,233,204,1) 100%);*/
+    background: rgb(236,238,174);
+    background: radial-gradient(circle, rgba(236,238,174,1) 0%, rgba(233,180,148,1) 100%);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .cabecalho{
     margin: 25px;
-    padding: 5px;
+    padding: 15px;
     font-size:xx-large;
     font-weight: 400;
-    border: 1px solid blue;
+    border: 1px solid rgb(231, 144, 73);
     border-radius: 5px;
     box-sizing: border-box;
-    text-align: center;
-    
+    text-align: left;
+    box-shadow: inset 0 0;
+    text-shadow: 2px 2px lightgoldenrodyellow;
+    text-transform:capitalize;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: whitesmoke;
+}
+
+nav{
+    justify-content: flex-end;
 }
 
 .paymentPage{
     text-align: center;
     margin: 35px;
     font-size:larger;
-    border: 1px solid blue;
+    border: 1px solid rgb(231, 144, 73);
+    border-radius: 10px;
     padding: 35px;
+    position: relative;
+    background-color: whitesmoke;
 }
 
 .text :first-child{
@@ -33,20 +51,36 @@ body{
 }
 
 .text :last-child{
-    text-align: left;
+    text-align: center;
     margin: 15px;
+    padding: 5px;
 }
 
 .formulario  {
-    border: 1px solid rgb(4, 71, 138);
+    border: 1px solid rgb(231, 144, 73);
     border-radius: 5px;
-    display: flexbox;
-    align-items: stretch;
-    /*align-content: space-around;*/
-    /*justify-content: space-between;*/
     padding: 10px;
-    margin: 20px;
+    margin: 55px;
     text-align:left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+   
+}
+
+.texto{
+    align-self:center;
+    margin-right: 80%;
+    padding-bottom: 10px;
+    
+}
+
+.resposta{
+    align-self: flex-end;
+    margin: 15px;
+    align-content: center;
 }
 
 /* --tirar setas do input de numero 
@@ -56,13 +90,33 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {                                          
     -webkit-appearance: none;
     margin: 0;
+    
+}
+
+.campos{
+    display: flex;
+
+}
+
+.cart{
+    border: 1px solid rgb(231, 144, 73);
+    border-radius: 10px;   
+    /*position: relative;*/
+    padding: 10px;
+    margin: 25px;
+    text-align:center;
+    background-color: whitesmoke;
+   /* float: right;*/
+   align-items: space-around;
+    
 }
 
 footer :only-child {
-    border: 1px solid rgb(4, 71, 138);
+    border-top: 3px groove rgb(231, 144, 73);
     border-radius: 5px;
-    display: flexbox;
-    margin-top: 25%;
+    display:block;
+    background-color: whitesmoke;
+    margin-top: 20%;
     text-align: center;
     font-size: small;
     padding: 10px;
