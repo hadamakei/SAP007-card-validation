@@ -23,6 +23,12 @@
       <div id="paymentPage" class="paymentPage">
         <div class="text"><h1>Finalizar Pagamento</h1>
         <h2>Olá Cliente para concluir sua compra prossiga os procedimentos de pagamento:</h2></div>
+        <div class="cart" id="sacola">
+          <img src="./img/carrinho-de-compras.png" width="25px">
+          <p>  1 item adicionado:</p>
+          <img src="./img/PNGPIX-COM-Coffee-Cup-PNG-Image.png" width="80px"><br>
+          <p>Caneca da LAB </p> <p> R$ 20,00</p>
+        </div>
         
         <form id="formCartao" class="formulario">
           
@@ -35,20 +41,16 @@
             <label for="numero"> Número do cartão:</label>
              <input type="number" id="cardNumber"  placeholder="0000000000000000" class="cardNumber"  >  <!--max="9999999999999999"-->
             
-            <button type="submit" id="submit">Enviar</button>
-          </div><br>
-          <div id="resposta" class="resposta"  style="display: none;" > 
+            <button type="submit" id="submit" class="btSubmit">Enviar</button>
+          </div>
+          <div id="resposta" class="resposta"  style="display: none" > 
             <p id="card" ></p>                                         <!--//aparecer cartao cripto p/ finalizar-->
-            <button type="submit" id="confirm">Confirmar</button>
+            <button type="submit" id="confirm" class="btConfirm">Confirmar</button>
           </div>
-          <div class="cart" id="sacola">
-            <p>  1 item adicionado ao seu carrinho:</p>
-            <img src="./img/PNGPIX-COM-Coffee-Cup-PNG-Image.png" width="80px"><br>
-            <label>Caneca da LAB <br> R$ 20,00</label>
-          </div>
+          
         </form> 
         <!--div  span-->
-         
+      
     </main>
    
    </section>
@@ -57,7 +59,7 @@
   </body>
 
   <footer>
-    <div>Desenvolvido By Keila Hadama <br> Laboratória <br> 2022</div>
+    <div>Desenvolvido By Keila Hadama <br> <a href="https://talento.laboratoria.la/">&lt; Laboratória &gt;</a> <br> 2022</div>
     
   </footer>
 </html>

@@ -8,7 +8,7 @@ body{
 }
 
 .cabecalho{
-    margin: 25px;
+    margin: 35px;
     padding: 15px;
     font-size:xx-large;
     font-weight: 400;
@@ -17,7 +17,7 @@ body{
     box-sizing: border-box;
     text-align: left;
     box-shadow: inset 0 0;
-    text-shadow: 2px 2px lightgoldenrodyellow;
+    text-shadow: 2px 2px rgba(233,180,148,1);
     text-transform:capitalize;
     display: flex;
     flex-direction: row;
@@ -25,6 +25,8 @@ body{
     justify-content: space-around;
     align-items: baseline;
     background-color: whitesmoke;
+   letter-spacing: 2px;
+
 }
 
 nav{
@@ -40,6 +42,8 @@ nav{
     padding: 35px;
     position: relative;
     background-color: whitesmoke;
+    
+    
 }
 
 .text :first-child{
@@ -47,6 +51,7 @@ nav{
     display:flex nowrap;
     align-content: space-around;
     text-align: center;
+    letter-spacing: 2px;
    
 }
 
@@ -54,12 +59,13 @@ nav{
     text-align: center;
     margin: 15px;
     padding: 5px;
+
 }
 
 .formulario  {
     border: 1px solid rgb(231, 144, 73);
     border-radius: 5px;
-    padding: 10px;
+    padding: 35px;
     margin: 55px;
     text-align:left;
     display: flex;
@@ -67,12 +73,13 @@ nav{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
+    max-height: min-content;
    
 }
 
 .texto{
     align-self:center;
-    margin-right: 80%;
+    margin-right: 75%;
     padding-bottom: 10px;
     
 }
@@ -80,7 +87,8 @@ nav{
 .resposta{
     align-self: flex-end;
     margin: 15px;
-    align-content: center;
+    /*align-content: center;*/
+   
 }
 
 /* --tirar setas do input de numero 
@@ -98,28 +106,67 @@ input::-webkit-inner-spin-button {
 
 }
 
+.name, .cardNumber{
+    border: 0;
+	border-bottom: 1px solid rgb(231, 144, 73);
+}
+
+
+
 .cart{
-    border: 1px solid rgb(231, 144, 73);
-    border-radius: 10px;   
-    /*position: relative;*/
-    padding: 10px;
+   /* border: 1px solid rgb(231, 144, 73);
+    border-radius: 10px;   */
+    position: relative;
+    padding: 20px;
     margin: 25px;
     text-align:center;
     background-color: whitesmoke;
-   /* float: right;*/
+   float: right;
    align-items: space-around;
     
 }
 
+.btSubmit, .btConfirm{
+    background-color: rgba(233,180,148,1);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    color:#FFF;
+    font-size: 13px;
+    text-transform: uppercase ;
+    float:inline-end;
+}
+
+button:hover{
+    
+    border-style: dotted;
+    border-radius: 50%;
+    padding: 10px;
+	background-color: rgb(231, 179, 6);
+	border-style: dotted;
+}
+
+
 footer :only-child {
-    border-top: 3px groove rgb(231, 144, 73);
+    /*border: 3px groove rgb(231, 144, 73);*/
+    border: 1px solid rgb(231, 144, 73);
     border-radius: 5px;
     display:block;
-    background-color: whitesmoke;
-    margin-top: 20%;
+    /*background-color: whitesmoke;*/
+    margin-top: 15%;
+    margin-left: 35px;
+    margin-right: 35px;
     text-align: center;
     font-size: small;
     padding: 10px;
+   letter-spacing: 2px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #000;
 }
 /*
 .classe

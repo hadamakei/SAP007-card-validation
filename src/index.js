@@ -9,38 +9,38 @@ function numCard(){
    return numCard;
 }        
 
-function maskify(numCCard){                                                         // passa o numero;chama o maskify do validador; retorna valor escondido
-    return validatorMaskify(numCCard);
+function maskify(numcCard){                                                         // passa o numero;chama o maskify do validador; retorna valor escondido
+    return validatorMaskify(numcCard);
 }
 
-function show(){
-    let btFinal= document.getElementById("resposta");
+function show(){                                                                            //mostrar/ esconder div de resposta e num do input
+    let btFinal= document.getElementById("resposta");                                   
     if (btFinal.style.display === "none"){
-        btFinal.style.display = "block";
-        document.getElementById('cardNumber').value = '';
+        btFinal.style.display = "block";                                                    //mostrar div
+        document.getElementById('cardNumber').value = '';                                   //esconder num
         //esconder.style.display = "none";
-        //let numCCard = numCCard.this.value= " ";
+        //let numcCard = numcCard.this.value= " ";
        // document.getElementsById("cardNumber").value = ''; 
     }else{
-        btFinal.style.display = "none";
+        btFinal.style.display = "none";                                                     //esconder
     }
 }
 
-function ola(Event){ 
+function output(event){ 
     let name = document.getElementById('name').value;                                       //pega nome // document.getElementById("name").textContent;   
-    let numCCard = numCard();                                                               //pegar resultado do numero
-    Event.preventDefault();                                                             //para de recarregar page; n envia form
+    let numcCard = numCard();                                                               //pegar resultado do numero
+    event.preventDefault();                                                             //para de recarregar page; n envia form
     if (document.getElementById("name").value == ""){                                      //n deixa campo nome vazio
         console.log(name);
-        document.getElementById('name').focus();
+        document.getElementById('name').focus();                                                //foca no input do nome
         return alert('Preencha o campo Nome corretamente.');
     }
-    if (numCCard == false){                                                                 // caso numero invalido
+    if (numcCard == false){                                                                 // caso numero invalido
         document.getElementById('cardNumber').focus();
         return alert(`Insira um número válido.`);  
     } 
      else{
-        let number = maskify(numCCard);
+        let number = maskify(numcCard);                                                             //caso valido resposta
         let resposta = document.getElementById('card');
         resposta.textContent= `Olá ${name} , o número de cartão inserido foi : ${number} .`;
         show();
@@ -49,7 +49,7 @@ function ola(Event){
     //alert(`Olá  ${name} confirme o número de seu cartão: ${number}.`);                     //alert confirmar
 }
 let enviar = document.getElementById('submit');                                     //botao
-enviar.addEventListener('click',ola);
+enviar.addEventListener('click',output);
 
     
     
@@ -59,7 +59,7 @@ enviar.addEventListener('click',ola);
 
 //manipular dom
 
-//1234567890123456  -16
+//1234567890123456  -16n
 //4083952015263 -13 ok
-//6363680354415371 ok
+//6363680354415371 ok 16
 

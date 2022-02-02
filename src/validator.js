@@ -23,7 +23,7 @@ function soma (cardArray){                                                      
 const validator = (numeCard) => {                             //recebe numero 
   console.log('validador');
   console.log(numeCard);
-  if (numeCard.length != 16){                                       //confere tamanho num
+  if (numeCard.length < 13){                                       //confere tamanho num
     return false;
   }
   
