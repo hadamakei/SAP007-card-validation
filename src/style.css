@@ -87,8 +87,7 @@ nav{
 .resposta{
     align-self: flex-end;
     margin: 15px;
-    /*align-content: center;*/
-   
+    
 }
 
 /* --tirar setas do input de numero 
@@ -117,12 +116,11 @@ input::-webkit-inner-spin-button {
    /* border: 1px solid rgb(231, 144, 73);
     border-radius: 10px;   */
     position: relative;
-    padding: 20px;
+    padding: 10px;
     margin: 25px;
     text-align:center;
     background-color: whitesmoke;
-   float: right;
-   align-items: space-around;
+    float: right;
     
 }
 
@@ -139,12 +137,11 @@ input::-webkit-inner-spin-button {
 }
 
 button:hover{
+    border-radius: 65%;
+    padding: 5px;
+	background-color:rgb(233, 152, 102) ;
+    transform: scale3d(5px);
     
-    border-style: dotted;
-    border-radius: 50%;
-    padding: 10px;
-	background-color: rgb(231, 179, 6);
-	border-style: dotted;
 }
 
 
