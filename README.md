@@ -33,7 +33,7 @@
 
    1. Se assegure de ter um editor de texto como [VSCode](https://code.visualstudio.com/); 
    2. Tenha um terminal e `git` instalados;
-   3. Faça o `fork` deste repositório;<
+   3. Faça o `fork` deste repositório;
    4. Faça o `clone` para sua maquina local;
    5. Instale o [Node.js](https://nodejs.org/)
    6. Com o comando `npm install` no terminal instale as dependências do projeto;
@@ -45,7 +45,7 @@
    Os testes deste projeto já vieram prontos do boilerplate do repositório inicial. Estão inclusos o [eslint](https://eslint.org/) para o `JavaScript` e para o `HTML` [htmlhint](https://github.com/yaniswang/HTMLHint). Essas tarefas são executadas com o comando `npm run test`.
    Os requisitos exigidos para passar nos testes unitários foram cobrir no mínimo de 70% dos _statements_, _functions_
    e _lines_, e um mínimo de 50% de _branches_.
-   Neste projeto os seguintes resultados foram obtidos:
+   Neste projeto os seguintes resultados foram obtidos: <br>
    <img height="250" width="500" src="src/img/testResult.png"> 
 
 
@@ -77,8 +77,8 @@
 # Autora
 
   <img  height="50" widtht="50" style="border-radius:5px;" src="https://avatars.githubusercontent.com/u/88164568?s=96&v=4">
-  
-=====================================================================
+
+
   Desenvolvido por Keila Hadama pelo Bootcamp da Laboratória. <br>
 
 
