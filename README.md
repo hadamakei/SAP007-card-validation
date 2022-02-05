@@ -1,6 +1,6 @@
-<h1 Textalign="center"> Card Validation </h1>
+<h1 Textalign:center;> Card Validation </h1>
 
-  <p Textalign="center"> Aplicativo Web que permite ao usuário validar um cartão de crédito</p> :credit_card:. <p>Projeto #1 do Bootcamp Laboratória</p> <br>
+  <p Textalign:center; > Aplicativo Web que permite ao usuário validar um cartão de crédito. :credit_card:</p>  <p>Projeto #1 do Bootcamp Laboratória</p> <br>
 
 ## Índice
 
@@ -17,12 +17,12 @@
   <p> O objetivo deste projeto é permitir que o usuário valide um cartão de crédito e tenha as funcionalidades de ocultar os dígitos do cartão exceto os 4 últimos.</p>
   
   A Validação é feita pelo [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm), ou módulo 10, é um método utilizado para validar desde números de IMEI de celular, números de identificação até cartões de crédito entre outros. Este algoritimo funciona desta maneira: 
-  <!--ts-->
+ 
     - 1. Obtemos o inverso do número a ser verificado (contendo apenas dígitos [0-9]);
     - 2. Os números que ocupam uma posição par são multiplicados por dois;
     - 3. Se esse número for maior ou igual a 10, os dígitos são somados e substituem a posição par; 
     - 4. O número final a ser verificado é a soma de todos os dígitos e este será válido se for um múltiplo de 10.
-  <!--te-->
+
   <p> A ideia do produto foi uma página de pagamento de um ecommerce. Onde os usuários do produto são possíveis clientes. O objetivo do usuário é finalizar uma compra e para isso ele precisa inserir seus dados, inclusive os dados de cartão de crédito para a validação, assim que validado seria possível continuar a navegação.</p>
  
  
@@ -45,7 +45,7 @@
    Os requisitos exigidos para passar nos testes unitários foram cobrir no mínimo de 70% dos _statements_, _functions_
    e _lines_, e um mínimo de 50% de _branches_.
    Neste projeto os seguintes resultados foram obtidos:
-   <img src="scr/img/testResult.png">
+   <img height="250" width="500" src="src/img/testResult.png"> 
 
 
 ## 4-Tecnologias
@@ -55,14 +55,14 @@
 
 ## 5-UX
   <p> O design da experiência do usuário foi primeiro pensada e desenhada em papel. Após alguns ajustes o protótipo final foi passado ao</p>[mockflow](https://wireframepro.mockflow.com/space/M8Vop87trnb). <p>O maior desafio desta etapa foi conhecer esta ferramenta nova e tentar replicar o que foi pensado. </p>
-  <img height="150" width="300" src= "./src/img/prototipo.png" >
+  <img height="250" width="500" src= "./src/img/prototipo.png" >
 
 
 
 ## 6- Demonstração da aplicação
- <img src="src/img/tela.png"> 
- <img src="">
- <img src="">
+ <img height="250" width="500" src="src/img/tela.png"> 
+ <img height="250" width="500" src="src/img/tela.gif">
+ 
 
 
 ## Status
@@ -76,6 +76,7 @@
 # Autora
 
   <img  height="50" widtht="50" style="border-radius:5px;" src="https://avatars.githubusercontent.com/u/88164568?s=96&v=4">
-  Desenvolvido por Keila pelo Bootcamp da Laboratória.
+  Desenvolvido por Keila Hadama pelo Bootcamp da Laboratória. <br>
+
 
   <a href="mailto:hadamakeila@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a> <a href="https://www.linkedin.com/in/keila-hadama-45a903193/" target="_bank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
