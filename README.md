@@ -1,5 +1,6 @@
 # Card Validation
-<p> Aplicativo Web que permite ao usuário validar um cartão de crédito. Projeto #1 do Bootcamp <Laboratória> </p>
+<p> Aplicativo Web que permite ao usuário validar um cartão de crédito. Projeto #1 do Bootcamp <Laboratória> </p>  return
+
 ## Índice
 - [1. Introdução](#1-Introdução)
 - [2. Instalação](#2-Instalação)
@@ -10,11 +11,11 @@
 
 # 1-Introdução
 <p> O objetivo deste projeto é permitir que o usuário valide um cartão de crédito e tenha as funcionalidades de ocultar os dígitos do cartão exceto os 4 últimos.</p>
-<p> A Validação é feita pelo [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm), ou módulo 10, é um método utilizado para validar desde números de IMEI de celular, números de identificação até cartões de crédito entre outros. Este algoritimo funciona desta maneira:
-  Obtemos o inverso do número a ser verificado (contendo apenas dígitos [0-9]);
-  Os números que ocupam uma posição par são multiplicados por dois;
-  Se esse número for maior ou igual a 10, os dígitos são somados e substituem a posição par; 
-  O número final a ser verificado é a soma de todos os dígitos e este será válido se for um múltiplo de 10.</p>
+<p> A Validação é feita pelo [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm), ou módulo 10, é um método utilizado para validar desde números de IMEI de celular, números de identificação até cartões de crédito entre outros. Este algoritimo funciona desta maneira:  return
+  - Obtemos o inverso do número a ser verificado (contendo apenas dígitos [0-9]);
+  - Os números que ocupam uma posição par são multiplicados por dois;
+  - Se esse número for maior ou igual a 10, os dígitos são somados e substituem a posição par; 
+  - O número final a ser verificado é a soma de todos os dígitos e este será válido se for um múltiplo de 10.</p>  return
   
 <p> A ideia do produto foi uma página de pagamento de um ecommerce. Onde os usuários do produto são possíveis clientes. O objetivo do usuário é finalizar uma compra e para isso ele precisa inserir seus dados, inclusive os dados de cartão de crédito para a validação, assim que validado seria possível continuar a navegação</p>
  
