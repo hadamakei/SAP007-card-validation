@@ -1,0 +1,172 @@
+
+body{
+    /*background: rgb(236,238,174);
+    background: linear-gradient(75deg, rgba(236,238,174,1) 0%, rgba(148,233,204,1) 100%);*/
+    background: rgb(236,238,174);
+    background: radial-gradient(circle, rgba(236,238,174,1) 0%, rgba(233,180,148,1) 100%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.cabecalho{
+    margin: 35px;
+    padding: 15px;
+    font-size:xx-large;
+    font-weight: 400;
+    border: 1px solid rgb(231, 144, 73);
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: inset 0 0;
+    text-shadow: 2px 2px rgba(233,180,148,1);
+    text-transform:capitalize;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: whitesmoke;
+   letter-spacing: 2px;
+
+}
+
+nav{
+    justify-content: flex-end;
+}
+
+.paymentPage{
+    text-align: center;
+    margin: 35px;
+    font-size:larger;
+    border: 1px solid rgb(231, 144, 73);
+    border-radius: 10px;
+    padding: 35px;
+    position: relative;
+    background-color: whitesmoke;
+    
+    
+}
+
+.text :first-child{
+    font-size: larger;
+    display:flex nowrap;
+    align-content: space-around;
+    text-align: center;
+    letter-spacing: 2px;
+   
+}
+
+.text :last-child{
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+
+}
+
+.formulario  {
+    border: 1px solid rgb(231, 144, 73);
+    border-radius: 5px;
+    padding: 35px;
+    margin: 55px;
+    text-align:left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    max-height: min-content;
+   
+}
+
+.texto{
+    align-self:center;
+    margin-right: 75%;
+    padding-bottom: 10px;
+    
+}
+
+.resposta{
+    align-self: flex-end;
+    margin: 15px;
+    
+}
+
+/* --tirar setas do input de numero 
+ /* <-- Aparentemente, algumas margens ainda estão lá, apesar de estar ocultas 
+ */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {                                          
+    -webkit-appearance: none;
+    margin: 0;
+    
+}
+
+.campos{
+    display: flex;
+
+}
+
+.name, .cardNumber{
+    border: 0;
+	border-bottom: 1px solid rgb(231, 144, 73);
+}
+
+
+
+.cart{
+   /* border: 1px solid rgb(231, 144, 73);
+    border-radius: 10px;   */
+    position: relative;
+    padding: 10px;
+    margin: 25px;
+    text-align:center;
+    background-color: whitesmoke;
+    float: right;
+    
+}
+
+.btSubmit, .btConfirm{
+    background-color: rgba(233,180,148,1);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    color:#FFF;
+    font-size: 13px;
+    text-transform: uppercase ;
+    float:inline-end;
+}
+
+button:hover{
+    border-radius: 65%;
+    padding: 5px;
+	background-color:rgb(233, 152, 102) ;
+    transform: scale3d(5px);
+    
+}
+
+
+footer :only-child {
+    /*border: 3px groove rgb(231, 144, 73);*/
+    border: 1px solid rgb(231, 144, 73);
+    border-radius: 5px;
+    display:block;
+    /*background-color: whitesmoke;*/
+    margin-top: 15%;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+   letter-spacing: 2px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+/*
+.classe
+
+#id n boa pratica
+*/

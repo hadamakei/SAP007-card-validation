@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cartão de crédito válido</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div id="root">
+      <h1>Laboratória's Store</h1>
+    </div>
+    <div>
+      <nav>
+        <a href="https://github.com/hadamakei/SAP007-card-validation" target="_blank"><img src="./img/github.png"></a>
+        <a href="https://www.linkedin.com/in/keila-hadama-45a903193/" target="_blank"><img src="./img/linkedin.png" width="32px"></a>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <main>
+      <div id="paymentPage" class="paymentPage">
+        <div class="text">
+          <h1>Finalizar Pagamento</h1>
+          <h2>Olá Cliente para concluir sua compra prossiga os procedimentos de pagamento:</h2>
+        </div>
+        <div class="cart" id="sacola">
+          <img src="./img/carrinho-de-compras.png" width="25px">
+          <p> 1 item adicionado:</p>
+          <img src="./img/PNGPIX-COM-Coffee-Cup-PNG-Image.png" width="80px"><br>
+          <p>Caneca da LAB </p>
+          <p> R$ 20,00</p>
+        </div>
+
+        <form id="formCartao" class="formulario">
+
+          <div class="texto">Inserir dados do cartão:</div>
+          <div class="campos">
+            <label for="nome">Nome (igual ao do cartão):</label>
+            <input type="text" id="name" required placeholder="Nome Sobrenome" class="name"><br>
+          </div>
+          <div>
+            <label for="numero"> Número do cartão:</label>
+            <input type="number" id="cardNumber" placeholder="0000000000000000" class="cardNumber">
+            <!--max="9999999999999999"-->
+
+            <button type="submit" id="submit" class="btSubmit">Enviar</button>
+          </div>
+          <div id="resposta" class="resposta" style="display: none">
+            <p id="card"></p>
+            <!--//aparecer cartao cripto p/ finalizar-->
+            <button type="submit" id="confirm" class="btConfirm">Confirmar</button>
+          </div>
+
+        </form>
+        <!--div  span-->
+      </div>
+    </main>
+
+  </section>
+
+  <script src="index.js" type="module"></script>
+</body>
+
+<footer>
+  <div>Desenvolvido By Keila Hadama <br> <a href="https://talento.laboratoria.la/" target="_blank">&lt; Laboratória &gt;</a> <br> 2022
+  </div>
+
+</footer>
+
+</html>
