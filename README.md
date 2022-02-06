@@ -33,12 +33,11 @@
 
    1. Se assegure de ter um editor de texto como [VSCode](https://code.visualstudio.com/); 
    2. Tenha um terminal e `git` instalados;
-   3. Faça o `fork` deste repositório;
-   4. Faça o `clone` para sua maquina local;
-   5. Instale o [Node.js](https://nodejs.org/)
-   6. Com o comando `npm install` no terminal instale as dependências do projeto;
-   7. Para visualizar o programa no navegador use o comando `npm start` no terminal para abrir um servidor web local e entre na `url` indicada `http://localhost:5000` no seu navegador;
-   8. Para fazer os `testes` unitários execute o comando `npm test`no terminal.
+   3. Faça o `clone` para sua maquina local;
+   4. Instale o [Node.js](https://nodejs.org/)
+   5. Com o comando `npm install` no terminal instale as dependências do projeto;
+   6. Para visualizar o programa no navegador use o comando `npm start` no terminal para abrir um servidor web local e entre na `url` indicada `http://localhost:5000` no seu navegador;
+   7. Para fazer os `testes` unitários execute o comando `npm test`no terminal.
 
 
 ## 3-Testes
