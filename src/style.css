@@ -1,7 +1,4 @@
-
 body{
-    /*background: rgb(236,238,174);
-    background: linear-gradient(75deg, rgba(236,238,174,1) 0%, rgba(148,233,204,1) 100%);*/
     background: rgb(236,238,174);
     background: radial-gradient(circle, rgba(236,238,174,1) 0%, rgba(233,180,148,1) 100%);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
@@ -42,8 +39,6 @@ nav{
     padding: 35px;
     position: relative;
     background-color: whitesmoke;
-    
-    
 }
 
 .text :first-child{
@@ -52,14 +47,12 @@ nav{
     align-content: space-around;
     text-align: center;
     letter-spacing: 2px;
-   
 }
 
 .text :last-child{
     text-align: center;
     margin: 15px;
     padding: 5px;
-
 }
 
 .formulario  {
@@ -73,15 +66,13 @@ nav{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
-    max-height: min-content;
-   
+    max-height: min-content;   
 }
 
 .texto{
     align-self:center;
     margin-right: 75%;
     padding-bottom: 10px;
-    
 }
 
 .resposta{
@@ -90,27 +81,20 @@ nav{
     
 }
 
-/* --tirar setas do input de numero 
- /* <-- Aparentemente, algumas margens ainda estão lá, apesar de estar ocultas 
- */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {                                          
     -webkit-appearance: none;
     margin: 0;
-    
 }
 
 .campos{
     display: flex;
-
 }
 
 .name, .cardNumber{
     border: 0;
 	border-bottom: 1px solid rgb(231, 144, 73);
 }
-
-
 
 .cart{
    /* border: 1px solid rgb(231, 144, 73);
@@ -121,7 +105,6 @@ input::-webkit-inner-spin-button {
     text-align:center;
     background-color: whitesmoke;
     float: right;
-    
 }
 
 .btSubmit, .btConfirm{
@@ -141,32 +124,21 @@ button:hover{
     padding: 5px;
 	background-color:rgb(233, 152, 102) ;
     transform: scale3d(5px);
-    
 }
 
-
-footer :only-child {
-    /*border: 3px groove rgb(231, 144, 73);*/
+footer  {
     border: 1px solid rgb(231, 144, 73);
     border-radius: 5px;
-    display:block;
-    /*background-color: whitesmoke;*/
-    margin-top: 15%;
+    margin-top: 9%;
     margin-left: 35px;
     margin-right: 35px;
     text-align: center;
     font-size: small;
     padding: 10px;
-   letter-spacing: 2px;
-
+    letter-spacing: 2px;  
 }
 
 a{
     text-decoration: none;
     color: #000;
 }
-/*
-.classe
-
-#id n boa pratica
-*/
